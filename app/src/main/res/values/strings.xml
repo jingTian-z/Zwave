@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Zwave</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="SetDefault">SetDefault</string>
+    <string name="AddNode">AddNode</string>
+    <string name="RmNode">RmNode</string>
+    <string name="SetAss">SetAss</string>
+    <string name="RmAss">RmAss</string>
+    <string name="P50">P50</string>
+    <string name="P51">P51</string>
+    <string name="ON">ON</string>
+    <string name="OFF">OFF</string>
+    <string name="ClearLog">ClearLog</string>
+    <string name="Back">Back</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

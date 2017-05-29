@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sj.zwave.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/ZWave"
+        style="@style/title">
+
+        <TextView
+            style="@style/title_center_text"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tx_back"
+            style="@style/title_end_text"
+            android:text="@string/Back"/>
+    </RelativeLayout>
+
+</LinearLayout>

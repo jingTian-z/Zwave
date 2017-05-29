@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spingarr">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="nodelist">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="commandclass">
+        <item>COMMAND_CLASS_BASIC</item>
+        <item>COMMAND_CLASS_ASSOCIATION</item>
+        <item>COMMAND_CLASS_CONFIGURATION</item>
+    </string-array>
+
+    <string-array name="basic_command">
+        <item>BASIC_SET</item>
+    </string-array>
+
+</resources>

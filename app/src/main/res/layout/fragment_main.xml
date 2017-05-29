@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    tools:context="com.sj.zwave.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/ZWave"
+        style="@style/title">
+
+        <TextView
+            android:gravity="center"
+            style="@style/title_center_text"
+            android:text="@string/app_name" />
+
+       <!-- <TextView
+            android:id="@+id/tx_settings"
+            style="@style/title_end_text"
+            android:text="Settings"/>
+            -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            >
+            <Button
+                android:id="@+id/setDefault"
+                android:text="@string/SetDefault"
+                android:textAllCaps="false"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/addNode"
+                android:text="@string/AddNode"
+                android:textAllCaps="false"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                />
+            <Button
+                android:id="@+id/rmNode"
+                android:textAllCaps="false"
+                android:text="@string/RmNode"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <Button
+                        android:id="@+id/setAssociation"
+                        android:text="@string/SetAss"
+                        android:textAllCaps="false"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        />
+                    <Spinner
+                        android:id="@+id/grouplist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/spingarr"
+                        />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <Button
+                        android:id="@+id/rmAssociation"
+                        android:text="@string/RmAss"
+                        android:textAllCaps="false"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:id="@+id/rmgrouplist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/spingarr"
+                        />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/param50"
+                android:text="@string/P50"
+                android:textAllCaps="false"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/param51"
+                android:text="@string/P51"
+                android:textAllCaps="false"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/on"
+                android:text="@string/ON"
+                android:textAllCaps="false"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/off"
+                android:text="@string/OFF"
+                android:textAllCaps="false"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+            <ScrollView
+                android:id="@+id/sllv"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="false">
+
+                <TextView
+                    android:id="@+id/logView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </ScrollView>
+
+            <Button
+                android:id="@+id/clog"
+                android:text="@string/ClearLog"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
